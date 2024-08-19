@@ -23,72 +23,83 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://punisher/meshes/NXP-HGD-CF.dae</uri>
+            <uri>model://punisher/meshes/bledned_drone_base.dae</uri>
           </mesh>
-        </geometry>
-      </visual>
-      <visual name="5010_motor_base_0">
-        <pose>0.174 0.174 .032 0 0 -.45</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://punisher/meshes/5010Base.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <visual name="5010_motor_base_1">
-        <pose>-0.174 0.174 .032 0 0 -.45</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://punisher/meshes/5010Base.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <visual name="5010_motor_base_2">
-        <pose>0.174 -0.174 .032 0 0 -.45</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://punisher/meshes/5010Base.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <visual name="5010_motor_base_3">
-        <pose>-0.174 -0.174 .032 0 0 -.45</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://punisher/meshes/5010Base.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-      <visual name="NXP_FMUK66_FRONT">
-        <pose>0.047 .001 .043 1 0 1.57</pose>
-        <cast_shadows>false</cast_shadows>
-        <geometry>
-          <plane>
-            <normal>0 0 1</normal>
-            <size>.013 .007</size>
-          </plane>
         </geometry>
         <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>model://punisher/materials/textures/nxp.png</albedo_map>
-            </metal>
-          </pbr>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name="5010_motor_base_0">
+        <pose>0.082 0.082 0.050 0 0 -.45</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model:/punisher/meshes/blended_motor.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name="5010_motor_base_1">
+        <pose>-0.082 0.082 0.050 0 0 -.45</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model:/punisher/meshes/blended_motor.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name="5010_motor_base_2">
+        <pose>0.082 -0.082 0.050 0 0 -.45</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model:/punisher/meshes/blended_motor.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name="5010_motor_base_3">
+        <pose>-0.082 -0.082 0.050 0 0 -.45</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model:/punisher/meshes/blended_motor.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
         </material>
       </visual>
       <visual name="NXP_FMUK66_TOP">
-        <pose>-0.023 0 .0515 0 0 -1.57</pose>
+        <pose>-0.023 0.005 .0385 0 0 -3.1415</pose>
         <cast_shadows>false</cast_shadows>
         <geometry>
           <plane>
             <normal>0 0 1</normal>
-            <size>.013 .007</size>
+            <size>.17 .05</size>
           </plane>
         </geometry>
         <material>
@@ -96,26 +107,7 @@
           <specular>1.0 1.0 1.0</specular>
           <pbr>
             <metal>
-              <albedo_map>model://punisher/materials/textures/nxp.png</albedo_map>
-            </metal>
-          </pbr>
-        </material>
-      </visual>
-      <visual name="RDDRONE_FMUK66_TOP">
-        <pose>-.03 0 .0515 0 0 -1.57</pose>
-        <cast_shadows>false</cast_shadows>
-        <geometry>
-          <plane>
-            <normal>0 0 1</normal>
-            <size>.032 .0034</size>
-          </plane>
-        </geometry>
-        <material>
-          <diffuse>1.0 1.0 1.0</diffuse>
-          <specular>1.0 1.0 1.0</specular>
-          <pbr>
-            <metal>
-              <albedo_map>model://punisher/materials/textures/rd.png</albedo_map>
+              <albedo_map>model://punisher/materials/textures/qadt.png</albedo_map>
             </metal>
           </pbr>
         </material>
@@ -294,7 +286,7 @@
       <gravity>true</gravity>
       <self_collide>false</self_collide>
       <velocity_decay/>
-      <pose>0.174 -0.174 0.06 0 0 0</pose>
+      <pose>0 0 0 0 0 0</pose>
       <inertial>
           <mass>0.016076923076923075</mass>
           <inertia>
@@ -304,28 +296,19 @@
           </inertia>
         </inertial>
       <visual name="rotor_0_visual">
-        <pose>-0.022 -0.14638461538461536 -0.016 0 0 0</pose>
+        <pose>0.082 0.082 0.060 0 0 -.45</pose>
         <geometry>
           <mesh>
-            <scale>0.8461538461538461 0.8461538461538461 0.8461538461538461</scale>
-            <uri>model://punisher/meshes/1345_prop_ccw.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>model://punisher/meshes/blended_prop.dae</uri>
           </mesh>
         </geometry>
         <material>
           <script>
-            <name>Gazebo/DarkGrey</name>
+            <name>Gazebo/Black</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
-      </visual>
-      <visual name="rotor_0_visual_motor_bell">
-        <pose>0 0 -.032 0 0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://punisher/meshes/5010Bell.dae</uri>
-          </mesh>
-        </geometry>
       </visual>
       <collision name="rotor_0_collision">
         <pose>0 0 0 0 0 0 </pose>
@@ -366,7 +349,7 @@
       <gravity>true</gravity>
       <self_collide>false</self_collide>
       <velocity_decay/>
-      <pose>-0.174 0.174 0.06 0 0 0</pose>
+      <pose>0 0 0 0 0 0</pose>
       <inertial>
           <mass>0.016076923076923075</mass>
           <inertia>
@@ -376,28 +359,19 @@
           </inertia>
         </inertial>
       <visual name="rotor_1_visual">
-        <pose>-0.022 -0.14638461538461536 -0.016 0 0 0</pose>
+        <pose>-0.082 0.082 0.060 0 0 -.45</pose>
         <geometry>
           <mesh>
-            <scale>0.8461538461538461 0.8461538461538461 0.8461538461538461</scale>
-            <uri>model://punisher/meshes/1345_prop_ccw.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>model://punisher/meshes/blended_prop.dae</uri>
           </mesh>
         </geometry>
         <material>
           <script>
-            <name>Gazebo/DarkGrey</name>
+            <name>Gazebo/Black</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
-      </visual>
-      <visual name="rotor_1_visual_motor_top">
-        <pose>0 0 -.032 0 0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://punisher/meshes/5010Bell.dae</uri>
-          </mesh>
-        </geometry>
       </visual>
       <collision name="rotor_1_collision">
         <pose>0 0 0 0 0 0 </pose>
@@ -438,7 +412,7 @@
       <gravity>true</gravity>
       <self_collide>false</self_collide>
       <velocity_decay/>
-      <pose>0.174 0.174 0.06 0 0 0</pose>
+      <pose>0 0 0 0 0 0</pose>
       <inertial>
           <mass>0.016076923076923075</mass>
           <inertia>
@@ -448,28 +422,19 @@
           </inertia>
         </inertial>
       <visual name="rotor_2_visual">
-        <pose>-0.022 -0.14638461538461536 -0.016 0 0 0</pose>
+        <pose>0.082 -0.082 0.060 0 0 -.45</pose>
         <geometry>
           <mesh>
-            <scale>0.8461538461538461 0.8461538461538461 0.8461538461538461</scale>
-            <uri>model://punisher/meshes/1345_prop_cw.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>model://punisher/meshes/blended_prop.dae</uri>
           </mesh>
         </geometry>
         <material>
           <script>
-            <name>Gazebo/DarkGrey</name>
+            <name>Gazebo/Black</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
-      </visual>
-      <visual name="rotor_2_visual_motor_top">
-        <pose>0 0 -.032 0 0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://punisher/meshes/5010Bell.dae</uri>
-          </mesh>
-        </geometry>
       </visual>
       <collision name="rotor_2_collision">
         <pose>0 0 0 0 0 0 </pose>
@@ -510,7 +475,7 @@
       <gravity>true</gravity>
       <self_collide>false</self_collide>
       <velocity_decay/>
-      <pose>-0.174 -0.174 0.06 0 0 0</pose>
+      <pose>0 0 0 0 0 0</pose>
       <inertial>
           <mass>0.016076923076923075</mass>
           <inertia>
@@ -520,28 +485,19 @@
           </inertia>
         </inertial>
       <visual name="rotor_3_visual">
-        <pose>-0.022 -0.14638461538461536 -0.016 0 0 0</pose>
+        <pose>-0.082 -0.082 0.06 0 0 0</pose>
         <geometry>
           <mesh>
-            <scale>0.8461538461538461 0.8461538461538461 0.8461538461538461</scale>
-            <uri>model://punisher/meshes/1345_prop_cw.stl</uri>
+            <scale>1 1 1</scale>
+            <uri>model://punisher/meshes/blended_prop.dae</uri>
           </mesh>
         </geometry>
         <material>
           <script>
-            <name>Gazebo/DarkGrey</name>
+            <name>Gazebo/Black</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
-      </visual>
-      <visual name="rotor_3_visual_motor_top">
-        <pose>0 0 -.032 0 0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://punisher/meshes/5010Bell.dae</uri>
-          </mesh>
-        </geometry>
       </visual>
       <collision name="rotor_3_collision">
         <pose>0 0 0 0 0 0 </pose>
