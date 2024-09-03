@@ -34,7 +34,7 @@
         </material>
       </visual>
       <visual name="5010_motor_base_0">
-        <pose>0.082 0.082 0.025 0 0 -.45</pose>
+        <pose>0.082 -0.082 0.025 0 0 -.45</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -64,7 +64,7 @@
         </material>
       </visual>
       <visual name="5010_motor_base_2">
-        <pose>0.082 -0.082 0.0250 0 0 -.45</pose>
+        <pose>0.082 0.082 0.0250 0 0 -.45</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -267,7 +267,7 @@
       <gravity>true</gravity>
       <self_collide>false</self_collide>
       <velocity_decay/>
-      <pose>0 0 0 0 0 0</pose>
+      <pose>0.082 -0.082 0.0350 0 0 0</pose>
       <inertial>
           <mass>0.016076923076923075</mass>
           <inertia>
@@ -277,7 +277,7 @@
           </inertia>
         </inertial>
       <visual name="rotor_0_visual">
-        <pose>0.082 0.082 0.0350 0 0 -.45</pose>
+        <pose>0 0 0 0 0 -.45</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -330,7 +330,7 @@
       <gravity>true</gravity>
       <self_collide>false</self_collide>
       <velocity_decay/>
-      <pose>0 0 0 0 0 0</pose>
+      <pose>-0.082 0.082 0.0350 0 0 0</pose>
       <inertial>
           <mass>0.016076923076923075</mass>
           <inertia>
@@ -340,7 +340,7 @@
           </inertia>
         </inertial>
       <visual name="rotor_1_visual">
-        <pose>-0.082 0.082 0.0350 0 0 -.45</pose>
+        <pose>0 0 0 0 0 -.45</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -393,7 +393,7 @@
       <gravity>true</gravity>
       <self_collide>false</self_collide>
       <velocity_decay/>
-      <pose>0 0 0 0 0 0</pose>
+      <pose>0.082 0.082 0.0350 0 0 0</pose>
       <inertial>
           <mass>0.016076923076923075</mass>
           <inertia>
@@ -403,7 +403,7 @@
           </inertia>
         </inertial>
       <visual name="rotor_2_visual">
-        <pose>0.082 -0.082 0.0350 0 0 -.45</pose>
+        <pose>0 0 0 0 0 -.45</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -456,7 +456,7 @@
       <gravity>true</gravity>
       <self_collide>false</self_collide>
       <velocity_decay/>
-      <pose>0 0 0 0 0 0</pose>
+      <pose>-0.082 -0.082 0.0350 0 0 0</pose>
       <inertial>
           <mass>0.016076923076923075</mass>
           <inertia>
@@ -466,7 +466,7 @@
           </inertia>
         </inertial>
       <visual name="rotor_3_visual">
-        <pose>-0.082 -0.082 0.035 0 0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
