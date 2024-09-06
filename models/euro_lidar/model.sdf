@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <sdf version="1.6">
-  <model name="downward_lidar">
-    <link name="lidar_link">
+  <model name="euro_lidar">
+    <link name="euro_lidar/base_link">
       <pose>0 0 0 0 0 0</pose>
       <inertial>
         <pose>0 0 0.0435 0 0 0</pose>
@@ -19,44 +19,40 @@
         <pose>0 0 0.0205 0 0 0</pose>
         <geometry>
           <box>
-            <size>0.06 0.06 0.041</size>
+            <size>0.01 0.01 0.041</size>
           </box>
         </geometry>
       </collision>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.06 0.06 0.041</size>
+            <size>0.01 0.01 0.041</size>
           </box>
         </geometry>
       </visual>
-      <sensor name="downward_lidar_sensor" type="ray">
+      <sensor name="lidar" type="gpu_lidar">
         <pose>0 0 0.055 0 0 0</pose>
         <ray>
           <scan>
-            <horizontal>
+            <vertical>
               <samples>1</samples> <!-- 1D lidar: single ray -->
-              <resolution>1</resolution>
+              <resolution>0.01</resolution>
               <min_angle>0.0</min_angle> <!-- No angle range for 1D -->
               <max_angle>0.0</max_angle>
-            </horizontal>
+            </vertical>
           </scan>
           <range>
             <min>0.02</min> <!-- 2 cm minimum range -->
-            <max>4.0</max> <!-- 4 meters maximum range -->
+            <max>10.0</max> <!-- 4 meters maximum range -->
             <resolution>0.01</resolution> <!-- 1 cm resolution -->
           </range>
-          <noise>
-            <type>gaussian</type>
-            <mean>0.0</mean>
-            <stddev>0.001</stddev> <!-- Minimal noise -->
-          </noise>
         </ray>
         <always_on>1</always_on>
         <update_rate>50</update_rate> <!-- 50 Hz update rate -->
         <visualize>true</visualize> <!-- Enable visualization for lidar rays -->
-        <topic>lidar/downward_range</topic> <!-- Publishes range data -->
+        <topic>lidar/z</topic> <!-- Publishes range data -->
       </sensor>
     </link>
   </model>
 </sdf>
+
